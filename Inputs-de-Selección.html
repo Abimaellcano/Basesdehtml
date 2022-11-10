@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,53 +8,86 @@
     , initial-scale=1.0">
     <title>Inputs de Selección</title>
 </head>
+
 <body>
-    
-<h1>Como Realizar un Commit</h1>
-<form>
-<h2>Género</h2>
-<label> Masculino
-    <input type="radio" name="gender" value="Masculino">
 
-</label>
-<label> Femenino
-    <input type="radio" name="gender" value="Femenino">
-</label>
-<label> Desconocido
-    <input type="radio" name="gender" value="Desconocido">
-</label>
+    <h1>Como Realizar un Commit</h1>
+    <form>
+        <h2>Género</h2>
+        <label> Masculino
+            <input type="radio" name="gender" value="Masculino">
 
-<!--si se quiere que aparezca un campo seleccinoado se escribe checked por ejemplo
+        </label>
+        <label> Femenino
+            <input type="radio" name="gender" value="Femenino">
+        </label>
+        <label> Desconocido
+            <input type="radio" name="gender" value="Desconocido">
+        </label>
+
+        <!--si se quiere que aparezca un campo seleccinoado se escribe checked por ejemplo
     <input type="radio" name="gender" value="Desconocido" checked>
 -->
-</form>
+    </form>
 
-<hr>
+    <hr>
+<div>
+    <h2>Lenguajes que conoces</h2>
+    <label>
+        HTML
+        <input type="checkbox" name="languages" value="html">
 
-<h2>Lenguajes que conoces</h2>
-<label>
-HTML
-<input type="checkbox" name="languages" value="html">
+    </label>
+    <label>
+        CSS
+        <input type="checkbox" name="languages" value="css">
 
-</label>
-<label>
-CSS
-    <input type="checkbox" name="languages" value="css">
-    
     </label>
 
     <label>
         JavaScript
         <input type="checkbox" name="languages" value="JavaScript">
-        
-        </label>
-        
+
+    </label>
+</div>
+    <hr>
+<div>
+    <H2>Elementos seleccionables</H2>
+    <select name="lenguajes">
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="JavaScript">JAVASCRIPT</option>
+    </select>
+    <hr>
+    <H2>Elementos seleccionables por categoría</H2>
+
+    <select name="lenguajes">
+        <optgroup label="Más Usados">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="JavaScript">JAVASCRIPT</option>
+        <optgroup label="Software">
+            <option value="VisualStudioCode">VisualStudioCode</option>
+            <option value="Xamp">Xamp</option>
+            <option value="Github">Github</option>
+
+        </optgroup>
+    </div>
+        <h3>Elementos Seleccionados por Datalist</h3>
+        <form>
+            <input type="list" list="Estudios">
+            <datalist id="Estudios">
+                <option value="Lenguaje Base">html</option>
+                <option value="Otros">css</option>
+                <option value="Java">java</option>
+                <option value="JavaScript">JavaScript</option>
+            </datalist>
 
 
-
-
+        </form>
 
 
 
 </body>
+
 </html>
